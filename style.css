@@ -361,7 +361,7 @@ ul {
 .citizens { background: var(--gray-bg); }
 .history { background: var(--white); }
 .news { background: var(--gray-bg); }
-.contacts { background: var(--white); }
+.contacts { background: var(--gray-bg); }
 
 .section__header {
   margin-bottom: 48px;
@@ -621,7 +621,7 @@ ul {
 
 /* ===== Contacts ===== */
 .contacts {
-  background: var(--white);
+  background: var(--gray-bg);
 }
 
 .contacts__grid {
@@ -651,10 +651,11 @@ ul {
 }
 
 .contacts__map-wrap {
-  background: var(--gray-bg);
+  background: var(--white);
   border-radius: var(--radius-lg);
   padding: 24px;
   border: 1px solid var(--gray-light);
+  box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -713,15 +714,12 @@ ul {
 }
 
 .contact-card {
-  background: var(--gray-bg);
+  background: var(--white);
   border-radius: var(--radius-lg);
   padding: 28px;
   margin-bottom: 16px;
   border: 1px solid var(--gray-light);
-}
-
-.contact-card--secondary {
-  background: var(--white);
+  box-shadow: var(--shadow);
 }
 
 .contact-card h3 {
@@ -783,10 +781,11 @@ ul {
 
 /* Form */
 .contacts__form-wrap {
-  background: var(--gray-bg);
+  background: var(--white);
   border-radius: var(--radius-lg);
   padding: 32px;
   border: 1px solid var(--gray-light);
+  box-shadow: var(--shadow);
   height: 100%;
   display: flex;
   flex-direction: column;
