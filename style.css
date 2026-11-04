@@ -1,4 +1,3 @@
-/* ===== Design tokens — Минскэнерго ===== */
 :root {
   --blue: #1e3a6e;
   --blue-dark: #152a52;
@@ -70,7 +69,6 @@ ul {
   padding: 0 24px;
 }
 
-/* ===== Buttons ===== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -118,7 +116,6 @@ ul {
   width: 100%;
 }
 
-/* ===== Header ===== */
 .header {
   position: fixed;
   top: 0;
@@ -244,7 +241,6 @@ ul {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ===== Hero ===== */
 .hero {
   position: relative;
   min-height: 92vh;
@@ -342,7 +338,6 @@ ul {
   margin-top: 2px;
 }
 
-/* ===== Sections ===== */
 .section {
   padding: 96px 0;
   position: relative;
@@ -354,7 +349,6 @@ ul {
   border-top: none;
 }
 
-/* Alternating section backgrounds for clear separation */
 .about { background: var(--white); }
 .structure { background: var(--gray-bg); }
 .services { background: var(--white); }
@@ -405,7 +399,6 @@ ul {
   line-height: 1.6;
 }
 
-/* ===== About ===== */
 .about {
   background: var(--white);
 }
@@ -497,7 +490,6 @@ ul {
   color: var(--text-muted);
 }
 
-/* ===== Services ===== */
 .services {
   background: var(--gray-bg);
 }
@@ -562,7 +554,6 @@ ul {
   flex-grow: 1;
 }
 
-/* ===== Stats ===== */
 .stats {
   background: linear-gradient(145deg, var(--blue-dark) 0%, var(--blue) 100%);
   position: relative;
@@ -619,7 +610,6 @@ ul {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* ===== Contacts ===== */
 .contacts {
   background: var(--gray-bg);
 }
@@ -779,7 +769,6 @@ ul {
   color: var(--blue-light);
 }
 
-/* Form */
 .contacts__form-wrap {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -864,7 +853,6 @@ ul {
   line-height: 1.45;
 }
 
-/* ===== Footer ===== */
 .footer {
   background: var(--blue-dark);
   color: rgba(255, 255, 255, 0.65);
@@ -911,7 +899,6 @@ ul {
   line-height: 1.5;
 }
 
-/* ===== Toast ===== */
 .toast {
   position: fixed;
   bottom: 28px;
@@ -935,7 +922,6 @@ ul {
   transform: translateX(-50%) translateY(0);
 }
 
-/* ===== Structure (РЭС) ===== */
 .structure {
   background: var(--gray-bg);
 }
@@ -982,7 +968,6 @@ ul {
   border-top: 1px solid var(--gray-light);
 }
 
-/* ===== History / Timeline ===== */
 .timeline {
   max-width: 720px;
   margin: 0 auto;
@@ -1043,8 +1028,6 @@ ul {
   line-height: 1.6;
 }
 
-
-/* ===== Mission ===== */
 .mission {
   background: linear-gradient(160deg, var(--blue) 0%, var(--blue-dark) 100%);
   color: var(--white);
@@ -1114,7 +1097,6 @@ ul {
   opacity: 0.85;
 }
 
-/* ===== Structure extras ===== */
 .res-card__badge {
   display: inline-block;
   font-size: 11px;
@@ -1147,12 +1129,10 @@ ul {
   font-weight: 500;
 }
 
-/* ===== Services 6 cards ===== */
 .services__grid {
   grid-template-columns: repeat(3, 1fr);
 }
 
-/* ===== Heat block ===== */
 .heat-block {
   margin-top: 48px;
   padding-top: 40px;
@@ -1198,12 +1178,10 @@ ul {
   color: var(--white);
 }
 
-/* Stats grid 8 items */
 .stats__grid {
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* ===== Citizens ===== */
 .citizens {
   background: var(--gray-bg);
 }
@@ -1278,7 +1256,6 @@ ul {
   text-decoration: underline;
 }
 
-/* FAQ */
 .faq {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1347,7 +1324,6 @@ ul {
   line-height: 1.6;
 }
 
-/* ===== News ===== */
 .news__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1398,7 +1374,6 @@ ul {
   font-weight: 500;
 }
 
-/* ===== Form extras ===== */
 .form-intro {
   font-size: 13px;
   color: var(--text-muted);
@@ -1424,7 +1399,6 @@ ul {
   box-shadow: 0 0 0 3px rgba(30, 58, 110, 0.12);
 }
 
-/* ===== Footer expanded ===== */
 .footer {
   background: var(--blue-dark);
   color: rgba(255, 255, 255, 0.85);
@@ -1510,7 +1484,6 @@ ul {
   line-height: 1.5;
 }
 
-/* ===== Responsive ===== */
 @media (max-width: 1024px) {
   .services__grid {
     grid-template-columns: 1fr 1fr;
@@ -1693,8 +1666,6 @@ ul {
   }
 }
 
-
-/* ===== Scroll to top ===== */
 .scroll-top {
   position: fixed;
   right: 24px;
@@ -1728,7 +1699,6 @@ ul {
   transform: translateY(-2px);
 }
 
-/* ===== Scroll reveal animations ===== */
 [data-animate] .section__header,
 [data-animate] .about__text,
 [data-animate] .about__cards,
@@ -1773,7 +1743,6 @@ ul {
 [data-animate].is-visible .heat-block { transition-delay: 0.2s; }
 [data-animate].is-visible .faq { transition-delay: 0.15s; }
 
-/* Stagger cards */
 .service-card,
 .res-card,
 .info-card,
@@ -1791,7 +1760,6 @@ ul {
   transform: translateY(-4px);
 }
 
-/* Hero entrance */
 .hero__content {
   animation: heroIn 0.9s ease both;
 }
@@ -1827,7 +1795,6 @@ ul {
   animation: heroIn 0.85s ease 0.48s both;
 }
 
-/* Timeline item fade */
 .timeline__item {
   opacity: 0;
   transform: translateX(-12px);

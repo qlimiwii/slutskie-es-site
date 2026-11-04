@@ -1,8 +1,3 @@
-/**
- * Слуцкие электрические сети — полноценный сайт филиала
- * script.js
- */
-
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initMobileNav();
@@ -14,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveal();
 });
 
-/* ===== Header scroll effect ===== */
 function initHeader() {
   const header = document.getElementById('header');
   if (!header) return;
@@ -27,7 +21,6 @@ function initHeader() {
   onScroll();
 }
 
-/* ===== Mobile navigation ===== */
 function initMobileNav() {
   const burger = document.getElementById('burger');
   const nav = document.getElementById('nav');
@@ -56,7 +49,6 @@ function initMobileNav() {
   });
 }
 
-/* ===== Smooth scroll ===== */
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
@@ -72,7 +64,6 @@ function initSmoothScroll() {
   });
 }
 
-/* ===== Animated counters ===== */
 function initCounters() {
   const items = document.querySelectorAll('.stat-item');
   if (!items.length) return;
@@ -118,7 +109,6 @@ function initCounters() {
   items.forEach(item => observer.observe(item));
 }
 
-/* ===== Contact form ===== */
 function initContactForm() {
   const form = document.getElementById('contactForm');
   if (!form) return;
@@ -140,7 +130,6 @@ function initContactForm() {
   });
 }
 
-/* ===== Toast ===== */
 function showToast(text) {
   const toast = document.getElementById('toast');
   if (!toast) return;
@@ -154,7 +143,6 @@ function showToast(text) {
   }, 3500);
 }
 
-/* ===== Active nav on scroll ===== */
 function initActiveNav() {
   const sections = document.querySelectorAll('section[id]');
   const links = document.querySelectorAll('.nav__link');
@@ -182,7 +170,6 @@ function initActiveNav() {
   onScroll();
 }
 
-/* ===== Scroll to top button ===== */
 function initScrollTop() {
   const btn = document.getElementById('scrollTop');
   if (!btn) return;
@@ -199,7 +186,6 @@ function initScrollTop() {
   });
 }
 
-/* ===== Section reveal on scroll ===== */
 function initReveal() {
   const sections = document.querySelectorAll('[data-animate]');
   if (!sections.length) return;
